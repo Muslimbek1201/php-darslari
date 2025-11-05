@@ -32,6 +32,53 @@ $user["famniliya"] = "Karimov";
 echo $user["familiya"];
 $user["tel"] =1234562;
 echo "\n";
+// 05.11
+$son = [0];
+$son[] = 1;
+$son[] = 15;
+$son['ism'] = "Ali";
+print_r($son);
+$cars = array("brand" => "Ford", "model" => "Mustang", "year" => 1964);
+ 
+foreach ($car as $x => $y) {
+    echo "$x: $y <br>";
+}
+$cars = array("brand" => "Ford", "model" => "Mustang",);
+$cars+= array("color" => "red",  "year" => 1964);
+
+$sonlar1 = [45,8,6,3,54,205,"test"];
+array_splice($sonlar1,1, 3);
+print_r($sonlar1);
+
+$cars = array("brand" => "Ford", "model" => "Mustang", "year" => 1964);
+unset($cars["model"]);
+$son = [53,68,85,98,23,29,2,3,66,];
+sort($son);
+rsort($son);
+print_r($son);
+
+$cars = [
+    ["brand" => "Ford", "model" => "Mustang", "year" => 1964],
+    ["brand" => "BMW", "model" => "M5", "year" => 2024],
+    ["brand" => "Chevrolet", "model" => "Onix", "year" => 2024],
+];
+echo $cars[0]['brand']."\n";
+echo $cars[1]['brand']."\n";
+for($i = 0; $i < count($cars);$i++);{
+    foreach($cars[$i] as $item){
+        echo $item." ";
+    }
+    echo "\n";
+}
+
+$son = [53,68,85,98,23,29,2,3,66,];
+foreach($son as $x ){
+    if($x %2 ==0){
+        echo $x;
+    }
+}
+$son = [2,3,2,2,];
+
 
 
 
